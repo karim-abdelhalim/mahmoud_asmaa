@@ -1,8 +1,7 @@
-"use client"
 import { Heart } from "lucide-react";
 
 export default function Footer() {
-  const year = new Date().getFullYear();
+  const year = 2026;
 
   return (
     <footer
