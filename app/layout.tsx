@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Tajawal, El_Messiri, Aref_Ruqaa } from "next/font/google";
 import "./globals.css";
+import MusicPlayer from "./components/MusicPlayer";
 
 const tajawal = Tajawal({
   variable: "--font-tajawal",
@@ -26,9 +27,9 @@ export const metadata: Metadata = {
   title: "دعوة زفاف محمود & أسماء",
   description: "يشرفنا حضوركم فرحتنا. تفاصيل الحفل وقصة حبنا ومعرض الصور.",
   icons: {
-    icon: "/images/heart.png",
-    shortcut: "/images/heart.png",
-    apple: "/images/heart.png",
+    icon: "/images/logo.png",
+    shortcut: "/images/logo.png",
+    apple: "/images/logo.png",
   },
 };
 
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className={`${tajawal.className} flex min-h-full flex-col`}>
         {children}
+        <MusicPlayer />
       </body>
     </html>
   );

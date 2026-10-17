@@ -43,7 +43,7 @@ export default function Navbar() {
   return (
     <header
       dir="rtl"
-      className={`fixed inset-x-0 top-0 z-10 transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-20 transition-all duration-300 ${
         scrolled || open
           ? "bg-[#fdf3ec]/90 shadow-sm backdrop-blur-md"
           : "bg-transparent"
