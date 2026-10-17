@@ -12,7 +12,7 @@ export default function Hero() {
       {/* الخلفية */}
       <Image
         src="/images/hero-bg.png"
-        alt="كريم و نور"
+        alt="محمود و أسماء"
         fill
         priority
         sizes="100vw"
@@ -33,9 +33,11 @@ export default function Hero() {
           Wedding Invitation
         </p>
 
-        <h1 className="font-script text-5xl leading-tight text-[#c4687a] sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl">
+        <h1 className="font-(family-name:--font-ruqaa) text-5xl font-bold leading-normal text-[#c4687a] sm:text-6xl lg:text-7xl xl:text-8xl">
           {data.groom}{" "}
-          <span className="mx-1 text-4xl sm:text-5xl lg:text-6xl">&amp;</span>{" "}
+          <span className="mx-1 text-4xl font-normal sm:text-5xl lg:text-6xl">
+            &amp;
+          </span>{" "}
           {data.bride}
         </h1>
 
